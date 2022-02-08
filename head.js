@@ -8,7 +8,7 @@ const assertEqual = function(actual, expected) {
 
 };
 
-function head(list) {
+const head = function(list) {
   return list[0];
 };
 
