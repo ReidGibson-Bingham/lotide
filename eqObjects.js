@@ -21,12 +21,11 @@ const eqObjects = function(object1, object2) {
   let equal = true;
   if (keys1.length !== keys2.length) {
     equal = false;
+  } else if (object1.a !== object2.a) {
+    equal = false;
+  } else if (object1.b !== object2.b) {
+    equal = false;
   }
-
-  for (key in keys1) {
-    console.log(keys1[key]);
-  }
-
   return equal;
 }
 
