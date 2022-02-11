@@ -1,0 +1,32 @@
+
+// we need an array to map
+// we need a callback function
+
+const words = ["ground", "control", "to", "major", "tom"];
+
+
+const map = function(array, callback) {
+  const results = [];
+  for (let item of array) {
+    results.push(callback(item));
+  }
+  return results;
+}
+
+const results1 = map(words, word => word[0]);
+console.log(results1)
+
+
+//map(words, (myWord) => console.log('my word ', myWord));
+
+/*
+const map = function(array, callback) {
+  const results = [];
+  for (let item of array) {
+    results.push(item);
+  }
+  return results;
+}
+
+console.log(map(words));
+*/
