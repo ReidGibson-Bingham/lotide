@@ -1,14 +1,6 @@
 
 const head = function(list) {
-  //
+  return list[0];
 };
 
 module.exports = head;
-
-const assertEqual = function(actual, expected) {
-  
-  //
-
-};
-
-module.exports = assertEqual;
