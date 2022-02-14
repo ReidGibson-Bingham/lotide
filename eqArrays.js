@@ -10,13 +10,10 @@ const assertEqual = function(actual, expected) {
 
 const eqArrays = function (list1, list2) {
   let isArraySame = true;
-  let len = 0;
   if (list1 > list2) {
-    len = list1.length;
-  } else {
-    len = list2.length;
+    isArraySame = false;
   }
-  for (let i = 0; i < len; i++) {
+  for (let i = 0; i < list1.length; i++) {
     if (list1[i] !== list2[i]){
       isArraySame = false;
     }
@@ -24,4 +21,4 @@ const eqArrays = function (list1, list2) {
   return isArraySame;
 }
 
-console.log(assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true));
+module.exports = eqArrays;
