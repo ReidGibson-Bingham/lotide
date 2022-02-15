@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@rgb_garden/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "valid",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/ReidGibson-Bingham/lotide.git"
   },
-  "author": "",
+  "author": "rgb_garden",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/ReidGibson-Bingham/lotide/issues"
