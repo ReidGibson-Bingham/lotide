@@ -2,10 +2,10 @@
 const middle = function (list) {
   let middle = list.length / (2);
   let outputList = [];
-  if (list.length === 1 || list.length === 2) {
+  if (list.length === 0 || list.length === 1) {
     return [];
   }
-  
+   
   if (list.length % 2 === 0) {
     outputList.push(list[middle - 1]);
     outputList.push(list[middle]);
